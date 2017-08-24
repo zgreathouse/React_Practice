@@ -6,6 +6,8 @@
 
 ![clock_example](/assets/clock.gif)
 
+![tabs_example](/assets/tabs.gif)
+
 ### These are the steps to run the project locally:
  - Fork repository
  - Move to project directory in Terminal
