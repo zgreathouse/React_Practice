@@ -22466,14 +22466,14 @@ var Clock = function (_React$Component) {
   }
 
   _createClass(Clock, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.intervalId = setInterval(this.tick, 1000);
-    }
-  }, {
     key: 'componentWillUnmount',
     value: function componentWillUnmount() {
       this.intervalId.clearInterval();
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.intervalId = setInterval(this.tick, 1000);
     }
   }, {
     key: 'tick',
@@ -22495,7 +22495,7 @@ var Clock = function (_React$Component) {
         'div',
         { className: 'container' },
         _react2.default.createElement(
-          'h1',
+          'p',
           { className: 'widget-header' },
           'Clock'
         ),
@@ -22516,13 +22516,12 @@ var Clock = function (_React$Component) {
               _react2.default.createElement(
                 'div',
                 { className: 'date-time-B' },
-                ' ',
                 hours,
                 ':',
                 minutes,
                 ':',
                 seconds,
-                ' PDT '
+                ' PDT'
               )
             ),
             _react2.default.createElement(
@@ -22536,8 +22535,7 @@ var Clock = function (_React$Component) {
               _react2.default.createElement(
                 'div',
                 { className: 'date-time-B' },
-                this.state.time.toDateString(),
-                ' '
+                this.state.time.toDateString()
               )
             )
           )

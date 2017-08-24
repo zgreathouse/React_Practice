@@ -10,12 +10,12 @@ export default class Clock extends React.Component {
     this.tick = this.tick.bind(this);
   }
 
-  componentDidMount() {
-    this.intervalId = setInterval(this.tick, 1000);
-  }
-
   componentWillUnmount() {
     this.intervalId.clearInterval();
+  }
+
+  componentDidMount() {
+    this.intervalId = setInterval(this.tick, 1000);
   }
 
   tick() {
@@ -33,16 +33,20 @@ export default class Clock extends React.Component {
 
     return (
       <div className='container'>
-        <h1 className='widget-header'>Clock</h1>
+        <p className='widget-header'>Clock</p>
         <div className='clock-flex'>
           <div className='clock'>
             <div className='date-time'>
               <div className='date-time-A'>Time:</div>
-              <div className='date-time-B'> {hours}:{minutes}:{seconds} PDT </div>
+              <div className='date-time-B'>
+                {hours}:{minutes}:{seconds} PDT
+              </div>
             </div>
             <div className='date-time'>
               <div className='date-time-A'>Date:</div>
-              <div className='date-time-B'>{this.state.time.toDateString()} </div>
+              <div className='date-time-B'>
+                {this.state.time.toDateString()}
+              </div>
             </div>
           </div>
         </div>
