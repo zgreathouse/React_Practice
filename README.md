@@ -1,6 +1,6 @@
 # React Widgets
 
-### This project is just a collection of different widgets, created for the sake of practicing the creation of React components.
+#### This project is just a collection of different widgets, created for the sake of practicing the creation of React components.
 
 ### Components:
 
