@@ -1,0 +1,65 @@
+.container{
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: #eee;
+}
+
+.widget-header{
+  padding-top: 20px;
+  font-size: 28px;
+  text-align: center;
+  width: 1000px;
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color: white;
+  color: #bbbbbb;
+}
+
+.clock-flex{
+  width: 1000px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-bottom: .5px solid #eee;
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color: white;
+}
+
+.clock{
+  background-image: url('https://static.tumblr.com/2823186b8c4e2d0c3f58f100da12e91e/2vguadz/zO8nn2n9a/tumblr_static_9d99t1rlj08wkwwksoc0o440w_640_v2.jpg');
+  display: flex;
+  flex-direction: column;
+  font-size: 21px;
+  color: #fef;
+  font-family: sans-serif;
+  width: 600px;
+  height: 110px;
+  border: 1px solid #ede;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #ede;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 2%;
+}
+
+.date-time{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  width: 340px;
+}
+
+.date-time-A {
+  width: 60px;
+}
+
+.date-time-B{
+  width: 200px;
+}
