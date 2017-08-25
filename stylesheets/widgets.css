@@ -221,3 +221,92 @@ span, article, footer, time, small {
 .tab-content0 article{
   text-align: center;
 }
+
+/**********************************************************************/
+/*************************** auto complete ****************************/
+
+.container3{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: #eee;
+}
+
+.widget-header3{
+  padding-top: 20px;
+  font-size: 28px;
+  text-align: center;
+  width: 1000px;
+  background-color: white;
+  color: #bbbbbb;
+}
+
+.auto-flex{
+  width: 1000px;
+  height: 1300px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-bottom: .5px solid #eee;
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color: white;
+}
+
+.auto{
+  color: white;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  width: 640px;
+  height: 1250px;
+  margin: 0px 0px 0px 17%;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #333;
+  background-image: url(https://i.ytimg.com/vi/ZgPcpFZ-bi4/maxresdefault.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.auto > *{
+  margin-left: 30px;
+}
+
+.auto > input{
+  width: 555px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 7px;
+}
+
+.auto li{
+  cursor: pointer;
+  list-style-type: circle;
+}
+
+.auto-enter {
+  opacity: 0.01;
+  transform: translateY(0%);
+}
+
+.auto-enter.auto-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms ease-in, transform 500ms ease-in;
+}
+
+.auto-leave {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.auto-leave.auto-leave-active {
+  opacity: 0.01;
+  transform: translateY(500%);
+  transition: opacity 700ms ease-in, transform 700ms ease-in;
+}
