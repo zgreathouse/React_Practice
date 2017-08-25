@@ -2,7 +2,7 @@
 
 #### A collection of different widgets constructed using React.
 
-### Components:
+### Widgets:
 
 ![clock_example](/assets/clock.gif)
 
