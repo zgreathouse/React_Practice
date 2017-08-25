@@ -8,6 +8,8 @@
 
 ![tabs_example](/assets/tabs.gif)
 
+![auto_complete_example](/assets/auto_complete.gif)
+
 ### These are the steps to run the project locally:
  - Fork repository
  - Move to project directory in Terminal
